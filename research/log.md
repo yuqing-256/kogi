@@ -477,8 +477,31 @@ Agent 不自行执行，也不修改受保护条款（任务书第 2 节第 3、
 
 ### Git
 
-- 本日第二次提交（第一次 97e15e1，Q-008 切片一）：`research/notes/granularity-review-2026-11-04.md`、`research/queue.md`、`research/log.md`。
+- 本日第二次提交（第一次 97e15e1，Q-008 切片一）：`research/reviews/granularity-2026-11-04.md`（提交时位于 `research/notes/granularity-review-2026-11-04.md`，2026-11-04 18:52 归档）、`research/queue.md`、`research/log.md`。
 
 ### 其他
 
 - 未做新史料检索、未核验既有论断、未改写原记录、未做阶段评审；无新增 media/publish 工作。
+
+---
+
+## 2026-11-04 18:52（Asia/Shanghai）归档维护：粒度评估记录移入 reviews/
+
+### 操作
+
+- `research/notes/granularity-review-2026-11-04.md` → `research/reviews/granularity-2026-11-04.md`（git mv，文件内容逐字未改）。
+- 新建 `research/reviews/`（仅此一层，不扩展其他目录结构）。
+- 旧路径引用已更新：`research/queue.md`「细分任务」节来源行、上条 2026-11-04 18:40 记录的 Git 行。
+
+### 理由
+
+- 该文件是「评估／审查」类记录，与逐条研究记录（`research/notes/Q-###.md`）性质不同；归档到 `research/reviews/` 并按日期命名，便于区分与稳定引用。
+- 纯归档维护，不属于独立研究任务；不改阶段、不改队列内容与编号、不改每日任务安排。
+
+### 规则说明
+
+- 不新增 decision 编号：D-006 已覆盖 2026-11-04 临时任务与当日额外提交；本次仅为同一任务的归档收尾，如实记录提交次数即可。
+
+### Git
+
+- 归档维护提交（今日第三次：97e15e1、870384d、本次）；若失败则记录实际状态并停止，不重试。
